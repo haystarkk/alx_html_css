@@ -1,36 +1,65 @@
 /* styles.css */
 
+/* Flexbox Layout */
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Make body fill the viewport height */
+    height: 100vh; /* Full viewport height */
 }
 
 main {
     display: flex;
     flex-direction: row;
-    flex: auto; /* Allow main to expand and fill available space */
+    flex: auto; /* Fill available space */
 }
 
+/* Content Areas */
 article {
-    flex: 2; /* Takes 2/3 of the space */
-    overflow-y: auto; /* Scrollable vertically */
+    flex: 2; /* 2/3 width */
+    overflow-y: auto;
     padding: 1rem;
     background-color: #ffffff;
 }
 
 aside {
-    flex: 1; /* Takes 1/3 of the space */
-    overflow-y: auto; /* Scrollable vertically */
+    flex: 1; /* 1/3 width */
+    overflow-y: auto;
     padding: 1rem;
     background-color: #f1f1f1;
 }
 
+/* Header and Footer */
 header, footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+/* Navigation Styling */
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2rem; /* Make the logo icon bigger */
 }
