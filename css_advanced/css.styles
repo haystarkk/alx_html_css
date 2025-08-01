@@ -1,75 +1,72 @@
-/* General Reset */
-* {
+/* 1. General Styles */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base font and body styling */
-body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ffffff;
   color: #333;
-  background-color: #fff;
-  line-height: 1.6;
 }
 
-/* Header styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 2. Header and Banner */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
+  padding: 20px 80px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.header .logo img {
+.logo img {
   height: 40px;
 }
 
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav ul li a {
-  text-decoration: none;
-  color: #333;
+.nav a {
+  color: #1f3a93;
   font-weight: 600;
 }
 
-/* Banner styles */
+/* Banner Section */
 .banner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 80px 40px;
-  background-color: #f2f2f2;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: #f0f4f8;
 }
 
-.banner-content {
-  max-width: 50%;
-}
-
-.banner-content h1 {
+.banner-text h1 {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
-.banner-content p {
-  font-size: 18px;
+.banner-text p {
+  font-size: 20px;
+  color: #555;
   margin-bottom: 30px;
 }
 
-.banner-content .cta-button {
-  background-color: #FF6565;
-  color: #fff;
-  border: none;
+.banner-button {
   padding: 15px 30px;
   font-size: 16px;
+  background-color: #1f3a93;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 .banner-image img {
@@ -77,35 +74,31 @@ body {
   height: auto;
 }
 
-/* Quote section */
+/* 3. Quote Section */
 .quote-section {
-  padding: 60px 40px;
-  background-color: #071629;
-  color: white;
+  background-color: #f9f9f9;
+  padding: 60px 80px;
   text-align: center;
 }
 
 .quote-section blockquote {
-  font-size: 24px;
   font-style: italic;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin: 0 auto 20px;
+  max-width: 800px;
 }
 
-.quote-section .author {
-  font-weight: bold;
+.quote-section cite {
+  display: block;
   font-size: 18px;
+  margin-top: 10px;
+  color: #888;
 }
 
-/* Videos list */
+/* 4. Videos List */
 .videos-section {
-  padding: 60px 40px;
-  background-color: white;
-}
-
-.videos-section h2 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 40px;
+  padding: 60px 80px;
+  background-color: #ffffff;
 }
 
 .videos-grid {
@@ -115,10 +108,15 @@ body {
 }
 
 .video-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   overflow: hidden;
   background-color: #fafafa;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
 }
 
 .video-card img {
@@ -126,59 +124,129 @@ body {
   height: auto;
 }
 
-.video-card .video-info {
+.video-card .card-content {
   padding: 15px;
 }
 
-/* Membership section */
+.video-card .card-content h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.video-card .card-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 5. Membership Section */
 .membership-section {
-  padding: 60px 40px;
-  background-color: #F2F2F2;
+  background-color: #f0f4f8;
+  padding: 60px 80px;
   text-align: center;
 }
 
 .membership-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.membership-section p {
-  font-size: 18px;
+  font-size: 36px;
   margin-bottom: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.membership-section .membership-cards {
+.membership-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .membership-card {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 280px;
-  text-align: left;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 300px;
 }
 
 .membership-card h3 {
-  margin-bottom: 10px;
-  font-size: 24px;
+  margin-top: 0;
+  color: #1f3a93;
 }
 
 .membership-card p {
-  font-size: 16px;
-  color: #666;
+  font-size: 14px;
+  color: #444;
 }
 
-/* FAQ Section */
+/* 6. FAQ Section */
 .faq-section {
-  padding: 60px 40px;
-  background-color: white;
-  max-width: 800px;
-  mar
+  padding: 60px 80px;
+  background-color: #ffffff;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.faq-item h4 {
+  font-size: 18px;
+  color: #1f3a93;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 7. Footer */
+.footer {
+  background-color: #1f3a93;
+  color: #ffffff;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-left,
+.footer .footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer .footer-left img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.footer .footer-left p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer .footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-right ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-right ul li a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #bbb;
+}
