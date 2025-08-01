@@ -1,4 +1,4 @@
-/* === Global Styles === */
+ /* === Global Styles === */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -69,7 +69,32 @@ body {
   max-width: 600px;
 }
 
-/* === Responsive Banner === */
+/* === Quote Section === */
+.quote-section {
+  background-color: #C271FF;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.quote-section blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.quote-section .author {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.quote-section .role {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* === Responsive Banner & Quote === */
 @media (max-width: 768px) {
   .header {
     padding: 15px 30px;
@@ -85,5 +110,10 @@ body {
 
   .banner p {
     font-size: 1rem;
+  }
+
+  .quote-section blockquote {
+    font-size: 1.2rem;
+    padding: 0 10px;
   }
 }
