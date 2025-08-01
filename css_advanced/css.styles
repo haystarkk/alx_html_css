@@ -1,8 +1,8 @@
- /* === Global Styles === */
+/* === Base Styles === */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,18 +12,28 @@ body {
   background-color: #fff;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* === Header === */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo img {
-  height: 30px;
+  height: 40px;
 }
 
 .nav ul {
@@ -33,29 +43,24 @@ body {
 }
 
 .nav a {
-  text-decoration: none;
-  color: #333;
   font-weight: 600;
-  font-size: 16px;
+  color: #333;
   transition: color 0.3s ease;
 }
 
 .nav a:hover {
-  color: #FF6565;
+  color: #ff6565;
 }
 
 /* === Banner Section === */
 .banner {
+  background: url('images/banner.jpg') center/cover no-repeat;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url('images/banner.jpg'); /* Replace with actual image filename */
-  background-size: cover;
-  background-position: center;
+  justify-content: center;
   text-align: center;
-  color: white;
+  color: #fff;
   padding: 0 20px;
 }
 
@@ -67,53 +72,103 @@ body {
 .banner p {
   font-size: 1.25rem;
   max-width: 600px;
+  margin: 0 auto;
 }
 
-/* === Quote Section === */
+/* === Quotes Section === */
 .quote-section {
-  background-color: #C271FF;
-  color: white;
-  padding: 80px 20px;
+  padding: 80px 60px;
+  background-color: #f5f5f5;
   text-align: center;
 }
 
-.quote-section blockquote {
+.quote {
   font-size: 1.5rem;
   font-style: italic;
-  max-width: 800px;
-  margin: 0 auto 30px auto;
+  color: #555;
+  margin-bottom: 40px;
 }
 
-.quote-section .author {
+.quote-author {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
+  color: #333;
 }
 
-.quote-section .role {
-  font-size: 1rem;
-  opacity: 0.8;
+/* === Video List Section === */
+.videos-section {
+  padding: 80px 60px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-/* === Responsive Banner & Quote === */
+.videos-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.videos-section p {
+  font-size: 1.125rem;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+.video-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-card .card-content {
+  padding: 20px;
+}
+
+.video-card .title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.video-card .description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
   .header {
-    padding: 15px 30px;
+    flex-direction: column;
+    padding: 20px;
   }
 
   .nav ul {
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
   }
 
-  .banner h1 {
-    font-size: 2rem;
-  }
-
-  .banner p {
-    font-size: 1rem;
-  }
-
-  .quote-section blockquote {
-    font-size: 1.2rem;
-    padding: 0 10px;
-  }
-}
+  .banner {
+    height: 70vh;
+    padding: 4
