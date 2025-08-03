@@ -1,0 +1,19 @@
+<!-- Same as 1-index.html, add after "what-we-do" section: -->
+<section id="results" class="our-results container">
+  <h2>Our results</h2>
+  <p>We aim for high-quality service that gives measurable outcomes.</p>
+  <div class="result-bars">
+    <div class="bar">
+      <h3>90%</h3>
+      <p>User satisfaction</p>
+    </div>
+    <div class="bar">
+      <h3>80%</h3>
+      <p>Improved focus</p>
+    </div>
+    <div class="bar">
+      <h3>70%</h3>
+      <p>Increased productivity</p>
+    </div>
+  </div>
+</section>
