@@ -1,0 +1,30 @@
+.contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
