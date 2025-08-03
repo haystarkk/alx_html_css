@@ -46,4 +46,4 @@ For support or issues, contact the ALX Frontend program team.
 ✅ Completed HTML + CSS foundations  
 ✅ Completed responsive mobile version  
 ✅ Completed animations  
-✅ Implemented hamburger menu using JavaScript  
+✅ Implemented hamburger menu using JavaScript.
