@@ -1,0 +1,25 @@
+/* Copy 0-styles.css and append: */
+.what-we-do {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icon-card {
+  flex: 1 1 30%;
+  max-width: 300px;
+}
+
+.icon-card span {
+  font-family: 'holberton_school-icon';
+  font-size: 50px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
