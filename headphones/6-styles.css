@@ -1,0 +1,19 @@
+.pentagon {
+  width: 0;
+  border-style: solid;
+  border-width: 50px 86.6px 0 86.6px;
+  border-color: var(--primary) transparent transparent transparent;
+  position: relative;
+  margin: 30px auto;
+}
+
+.pentagon::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -86.6px;
+  width: 0;
+  border-style: solid;
+  border-width: 0 86.6px 50px 86.6px;
+  border-color: transparent transparent var(--primary) transparent;
+}
